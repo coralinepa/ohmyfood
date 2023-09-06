@@ -1,0 +1,15 @@
+@use "variables" as *;
+
+.search-section {
+    display: flex;
+    justify-content: center;
+    background-color: $color-section;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    gap: 17px;
+    input {
+        appearance: none;
+        border-color: transparent;
+        background-color: $color-section;
+    }
+}
