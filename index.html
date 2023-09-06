@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oh my food</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="sass/styles.css">
+    <script src="https://kit.fontawesome.com/a8a9b95856.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html"><img id="header__logo" src="assets/img/ohmyfood.png" alt="Logo ohmyfood"></a>
+    </header>
+    <main>
+        <section class="search-section">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="search" value="Paris, Belleville">
+        </section>
+        <section class="headline">
+            <h1>Réservez le menu qui vous convient</h1>
+            <h2>Découvrez des restaurants d’exception, sélectionnés par nos soins.</h2>
+            <button class="btn btn-round btn-linear">Explorer vos restaurants</button>
+        </section>
+        <section class="functioning">
+            <h2>Fonctionnement</h2>
+            <ul class="functioning__list">
+                <li>
+                    <span class="number-list">1</span>
+                    <span class="icon-list">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                    </span>
+                    <p>Choisissez un menu</p>
+                </li>
+                <li>
+                    <span class="number-list">2</span>
+                    <span class="icon-list">
+                        <i class="fa-solid fa-list"></i>
+                    </span>
+                    <p>Composez votre menu</p>
+                </li>
+                <li>
+                    <span class="number-list">3</span>
+                    <span class="icon-list">
+                        <i class="fa-solid fa-store"></i>
+                    </span>
+                    <p>Dégustez votre menu</p>
+                </li>
+            </ul>
+        </section>
+        <section class="restaurants">
+            <h2 class="section-title">Restaurants</h2>
+            <div class="restaurants-cards">
+                <article class="card">
+                    <img src="./restaurants/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
+                    <span class="card-badge">
+                        Nouveau
+                    </span>
+                    <div class="card-content">
+                        <header class="card-txt">
+                            <h3 class="card-title">La palette du goût</h3>
+                            <p class="card-subtitle">Ménilmontant</p>
+                        </header>
+                        <div class="card-rating">
+                            <svg class="icon-heart-transparent" xmlns="http://www.w3.org/2000/svg" width="23"
+                                height="21" viewBox="0 0 23 21" fill="none">
+                                <path
+                                    d="M12.7206 2.40551L12.7203 2.40576L11.8739 3.35732L11.5003 3.77727L11.1267 3.35732L10.2802 2.40576L10.2797 2.40514C8.28247 0.152585 5.09737 -0.169649 2.9764 1.80201C0.482212 4.1245 0.344816 8.32357 2.58455 10.8495L10.8987 20.2148C10.8987 20.2149 10.8988 20.2149 10.8988 20.2149C11.237 20.5955 11.7593 20.5955 12.0975 20.2149C12.0975 20.2149 12.0975 20.2149 12.0976 20.2148L20.4119 10.8493L20.412 10.8492C22.6556 8.32335 22.5183 4.12461 20.0243 1.80213L12.7206 2.40551ZM12.7206 2.40551C14.7223 0.15233 17.9032 -0.169452 20.024 1.80187L12.7206 2.40551Z"
+                                    stroke="#101010" />
+                            </svg>
+                            <svg class="icon-heart-gradient" xmlns="http://www.w3.org/2000/svg" width="23" height="21"
+                                viewBox="0 0 23 21" fill="none">
+                                <path
+                                    d="M20.3647 1.4363C18.01 -0.752765 14.5081 -0.359015 12.3468 2.0738L11.5003 3.02536L10.6538 2.0738C8.49677 -0.359015 4.99052 -0.752765 2.63583 1.4363C-0.0626076 3.9488 -0.204405 8.45817 2.21044 11.1816L10.5249 20.5472C11.062 21.1519 11.9343 21.1519 12.4714 20.5472L20.7858 11.1816C23.205 8.45817 23.0632 3.9488 20.3647 1.4363Z"
+                                    fill="url(#paint0_linear_25368_712)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_25368_712" x1="11.5" y1="-5.45973" x2="3.93419"
+                                        y2="27.9927" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#9356DC" />
+                                        <stop offset="1" stop-color="#FF79DA" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="restaurants/img/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
+                    <span class="card-badge">
+                        Nouveau
+                    </span>
+                    <div class="card-content">
+                        <header class="card-txt">
+                            <h3 class="card-title">La note enchantée</h3>
+                            <p class="card-subtitle">Charonne</p>
+                        </header>
+                        <div class="card-rating">
+                            <svg class="icon-heart-transparent" xmlns="http://www.w3.org/2000/svg" width="23"
+                                height="21" viewBox="0 0 23 21" fill="none">
+                                <path
+                                    d="M12.7206 2.40551L12.7203 2.40576L11.8739 3.35732L11.5003 3.77727L11.1267 3.35732L10.2802 2.40576L10.2797 2.40514C8.28247 0.152585 5.09737 -0.169649 2.9764 1.80201C0.482212 4.1245 0.344816 8.32357 2.58455 10.8495L10.8987 20.2148C10.8987 20.2149 10.8988 20.2149 10.8988 20.2149C11.237 20.5955 11.7593 20.5955 12.0975 20.2149C12.0975 20.2149 12.0975 20.2149 12.0976 20.2148L20.4119 10.8493L20.412 10.8492C22.6556 8.32335 22.5183 4.12461 20.0243 1.80213L12.7206 2.40551ZM12.7206 2.40551C14.7223 0.15233 17.9032 -0.169452 20.024 1.80187L12.7206 2.40551Z"
+                                    stroke="#101010" />
+                            </svg>
+                            <svg class="icon-heart-gradient" xmlns="http://www.w3.org/2000/svg" width="23" height="21"
+                                viewBox="0 0 23 21" fill="none">
+                                <path
+                                    d="M20.3647 1.4363C18.01 -0.752765 14.5081 -0.359015 12.3468 2.0738L11.5003 3.02536L10.6538 2.0738C8.49677 -0.359015 4.99052 -0.752765 2.63583 1.4363C-0.0626076 3.9488 -0.204405 8.45817 2.21044 11.1816L10.5249 20.5472C11.062 21.1519 11.9343 21.1519 12.4714 20.5472L20.7858 11.1816C23.205 8.45817 23.0632 3.9488 20.3647 1.4363Z"
+                                    fill="url(#paint0_linear_25368_712)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_25368_712" x1="11.5" y1="-5.45973" x2="3.93419"
+                                        y2="27.9927" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#9356DC" />
+                                        <stop offset="1" stop-color="#FF79DA" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="./restaurants/img/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="À la française">
+                    <div class="card-content">
+                        <header class="card-txt">
+                            <h3 class="card-title">À la française</h3>
+                            <p class="card-subtitle">Cité Rouge</p>
+                        </header>
+                        <div class="card-rating">
+                            <svg class="icon-heart-transparent" xmlns="http://www.w3.org/2000/svg" width="23"
+                                height="21" viewBox="0 0 23 21" fill="none">
+                                <path
+                                    d="M12.7206 2.40551L12.7203 2.40576L11.8739 3.35732L11.5003 3.77727L11.1267 3.35732L10.2802 2.40576L10.2797 2.40514C8.28247 0.152585 5.09737 -0.169649 2.9764 1.80201C0.482212 4.1245 0.344816 8.32357 2.58455 10.8495L10.8987 20.2148C10.8987 20.2149 10.8988 20.2149 10.8988 20.2149C11.237 20.5955 11.7593 20.5955 12.0975 20.2149C12.0975 20.2149 12.0975 20.2149 12.0976 20.2148L20.4119 10.8493L20.412 10.8492C22.6556 8.32335 22.5183 4.12461 20.0243 1.80213L12.7206 2.40551ZM12.7206 2.40551C14.7223 0.15233 17.9032 -0.169452 20.024 1.80187L12.7206 2.40551Z"
+                                    stroke="#101010" />
+                            </svg>
+                            <svg class="icon-heart-gradient" xmlns="http://www.w3.org/2000/svg" width="23" height="21"
+                                viewBox="0 0 23 21" fill="none">
+                                <path
+                                    d="M20.3647 1.4363C18.01 -0.752765 14.5081 -0.359015 12.3468 2.0738L11.5003 3.02536L10.6538 2.0738C8.49677 -0.359015 4.99052 -0.752765 2.63583 1.4363C-0.0626076 3.9488 -0.204405 8.45817 2.21044 11.1816L10.5249 20.5472C11.062 21.1519 11.9343 21.1519 12.4714 20.5472L20.7858 11.1816C23.205 8.45817 23.0632 3.9488 20.3647 1.4363Z"
+                                    fill="url(#paint0_linear_25368_712)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_25368_712" x1="11.5" y1="-5.45973" x2="3.93419"
+                                        y2="27.9927" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#9356DC" />
+                                        <stop offset="1" stop-color="#FF79DA" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <img src="restaurants/img/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                        alt="Le délice des sens">
+                    <div class="card-content">
+                        <header class="card-txt">
+                            <h3 class="card-title">Le délice des sens</h3>
+                            <p class="card-subtitle">Folie-Méricourt</p>
+                        </header>
+                        <div class="card-rating">
+                            <svg class="icon-heart-transparent" xmlns="http://www.w3.org/2000/svg" width="23"
+                                height="21" viewBox="0 0 23 21" fill="none">
+                                <path
+                                    d="M12.7206 2.40551L12.7203 2.40576L11.8739 3.35732L11.5003 3.77727L11.1267 3.35732L10.2802 2.40576L10.2797 2.40514C8.28247 0.152585 5.09737 -0.169649 2.9764 1.80201C0.482212 4.1245 0.344816 8.32357 2.58455 10.8495L10.8987 20.2148C10.8987 20.2149 10.8988 20.2149 10.8988 20.2149C11.237 20.5955 11.7593 20.5955 12.0975 20.2149C12.0975 20.2149 12.0975 20.2149 12.0976 20.2148L20.4119 10.8493L20.412 10.8492C22.6556 8.32335 22.5183 4.12461 20.0243 1.80213L12.7206 2.40551ZM12.7206 2.40551C14.7223 0.15233 17.9032 -0.169452 20.024 1.80187L12.7206 2.40551Z"
+                                    stroke="#101010" />
+                            </svg>
+                            <svg class="icon-heart-gradient" xmlns="http://www.w3.org/2000/svg" width="23" height="21"
+                                viewBox="0 0 23 21" fill="none">
+                                <path
+                                    d="M20.3647 1.4363C18.01 -0.752765 14.5081 -0.359015 12.3468 2.0738L11.5003 3.02536L10.6538 2.0738C8.49677 -0.359015 4.99052 -0.752765 2.63583 1.4363C-0.0626076 3.9488 -0.204405 8.45817 2.21044 11.1816L10.5249 20.5472C11.062 21.1519 11.9343 21.1519 12.4714 20.5472L20.7858 11.1816C23.205 8.45817 23.0632 3.9488 20.3647 1.4363Z"
+                                    fill="url(#paint0_linear_25368_712)" />
+                                <defs>
+                                    <linearGradient id="paint0_linear_25368_712" x1="11.5" y1="-5.45973" x2="3.93419"
+                                        y2="27.9927" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#9356DC" />
+                                        <stop offset="1" stop-color="#FF79DA" />
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <section class="footer-content">
+                <a href="index.html"><img id="logo__footer" src="assets/img/ohmyfoodwhite.png" alt="Logo ohmyfood"></a>
+                <ul class="menu__list-footer">
+                    <li class="list-footer">
+                        <span class="icon-list__restaurant">
+                            <i class="fa-solid fa-utensils"></i>
+                            <a href="index.html">Restaurants</a>
+                        </span>
+                    </li>
+                    <li class="list-footer">
+                        <span class="icon-list__partner">
+                            <i class="fa-solid fa-handshake-angle"></i>
+                            <a href="index.html">Devenir partenaires</a>
+                        </span>
+                    </li>
+                    <li class="list-footer">
+                        <a href="index.html">Mentions légales</a>
+                    </li>
+                    <li class="list-footer">
+                        <a href="index.html">Contact</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </footer>
+</body>
+
+</html>

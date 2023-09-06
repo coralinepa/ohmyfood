@@ -1,0 +1,22 @@
+.card-rating {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 22px;
+}
+
+.icon-heart-transparent {
+    position: absolute;
+    opacity: 1;
+    &:hover {
+        opacity: 0;
+    }
+}
+
+.icon-heart-gradient {
+    position: absolute;
+    opacity: 0;
+    &:hover {
+        opacity: 1;
+    }
+}
