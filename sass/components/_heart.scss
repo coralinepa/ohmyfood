@@ -1,0 +1,32 @@
+@use "../utils" as *;
+
+.like {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 22px;
+    margin-right: 16px;
+    cursor: pointer;
+
+    &--transparent {
+        position: absolute;
+        opacity: 1;
+        width: 23px;
+        height: 21px;
+        &:hover {
+            opacity: 0;
+        }
+    }
+
+    &--gradient {
+        position: absolute;
+        opacity: 0;
+        width: 23px;
+        height: 21px;
+        transition: all 400ms;
+        &:hover {
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+}

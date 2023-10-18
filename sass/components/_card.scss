@@ -1,0 +1,104 @@
+@use "../utils" as *;
+
+@keyframes mouseEnter {
+    0% {
+        opacity: 0;
+        width: 0;
+    }
+    100% {
+        opacity: 1;
+        width: 59px;
+    }
+}
+
+@keyframes mouseLeave {
+    0% {
+        opacity: 1;
+        width: 59px;
+    }
+    100% {
+        opacity: 0;
+        width: 0;
+    }
+}
+
+.restaurants__cards .card {
+    transform: none;
+}
+
+.card {
+    border-radius: 15px;
+    background-color: $color-main;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    position: relative;
+    flex: 1 0 30%;
+    transform: (translateX(-110%));
+
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 231px;
+        border-radius: 15px 15px 0px 0px;
+        flex-shrink: 0;
+    }
+
+    &__badge {
+        position: absolute;
+        right: 27px;
+        top: 19px;
+        background-color: #99e2d0;
+        padding: 9px 7px 8.63px 6px;
+        color: #008766;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__txt {
+        padding-left: 20px;
+        margin: 0;
+        line-height: 26px;
+        flex: 1 1 auto;
+        padding: 12px 20px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    &__title {
+        margin: 0;
+    }
+
+    &__subtitle {
+        margin: 0;
+    }
+
+    &__price {
+        padding-right: 13.5px;
+        font-weight: 700;
+    }
+
+    .btn__validation {
+        animation: mouseLeave 1s forwards;
+    }
+
+    &:hover .btn__validation {
+        animation: mouseEnter 1s forwards;
+    }
+}
+
+.card a {
+    cursor: pointer;
+    appearance: none;
+    text-decoration: none;
+    color: black;
+}
+
+.card .like {
+    top: -38px;
+}

@@ -1,0 +1,88 @@
+@keyframes cardEnterFirst {
+    0% {
+        transform: (translateX(-110%));
+    }
+    25% {
+        transform: (translateX(0));
+        opacity: 1;
+    }
+    100% {
+        transform: (translateX(0));
+        opacity: 1;
+    }
+}
+
+@keyframes cardEnterSecond {
+    25% {
+        transform: (translateX(-110%));
+    }
+    50% {
+        transform: (translateX(0));
+        opacity: 1;
+    }
+    100% {
+        transform: (translateX(0));
+        opacity: 1;
+    }
+}
+
+@keyframes cardEnterThird {
+    50% {
+        transform: (translateX(-110%));
+    }
+    100% {
+        transform: (translateX(0));
+        opacity: 1;
+    }
+}
+@keyframes cardEnterFour {
+    75% {
+        transform: (translateX(-110%));
+    }
+    100% {
+        transform: (translateX(0));
+        opacity: 1;
+    }
+}
+
+.menu {
+    article {
+        opacity: 0;
+        &:nth-of-type(1) {
+            animation: cardEnterFirst 1s forwards;
+            animation-delay: 1s;
+        }
+
+        &:nth-of-type(2) {
+            animation: cardEnterSecond 1s forwards;
+            animation-delay: 1s;
+        }
+        &:nth-of-type(3) {
+            animation: cardEnterThird 1s forwards;
+            animation-delay: 1s;
+        }
+        &:nth-of-type(4) {
+            animation: cardEnterFour 1s forwards;
+            animation-delay: 1s;
+        }
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 634px;
+    width: 100%;
+    margin: 0 auto;
+
+    &__title {
+        &:after {
+            display: block;
+            content: "";
+            width: 40px;
+            height: 3px;
+            background-color: #99e2d0;
+        }
+    }
+}

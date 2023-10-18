@@ -1,0 +1,29 @@
+@use "../utils" as *;
+
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    padding-left: 14px;
+    padding-right: 15px;
+    background-color: #f6f6f6;
+    @media (min-width: 376px) {
+        padding: 0px 180px;
+    }
+    &__title {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 66px;
+        @media (min-width: 376px) {
+            flex-direction: row;
+            gap: 100px;
+        }
+    }
+}
