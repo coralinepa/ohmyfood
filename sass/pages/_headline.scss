@@ -1,11 +1,11 @@
-@use "variables" as *;
+@use "../utils" as *;
 
 .headline {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: $color-main;
+    background-color: #f6f6f6;
     padding-top: 39px;
-    padding-bottom: 57px;
+    padding-bottom: 30px;
 }

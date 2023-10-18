@@ -1,0 +1,70 @@
+@use "../utils" as *;
+
+.functioning {
+    padding: 0 20px;
+    margin-bottom: 68px;
+    @media (min-width: 376px) {
+        padding: 50px 180px;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 24px;
+        font-weight: 700;
+        padding-bottom: 25px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding: 0 20px;
+
+        @media (min-width: 376px) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        &__items {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 17px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-right: 80px;
+            white-space: nowrap;
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+            border-radius: 20px;
+
+            @media (min-width: 376px) {
+                justify-content: space-around;
+            }
+
+            &__number {
+                background: $purple;
+                border: 1px solid transparent;
+                border-radius: 50%;
+                font-size: 14px;
+                color: $color-main;
+                width: 24px;
+                height: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: -12px;
+            }
+
+            &__icon {
+                color: #7e7e7e;
+                transition: all 450ms;
+                &:hover {
+                    color: $purple;
+                }
+                &:active {
+                    color: $purple;
+                }
+            }
+        }
+    }
+}

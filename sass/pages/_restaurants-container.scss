@@ -1,0 +1,39 @@
+.restaurant {
+    padding: 32px 17px 40px 17px;
+    border-radius: 40px 40px 0px 0px;
+    background-color: #f6f6f6;
+    position: relative;
+    margin-top: -42px;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 376px) {
+        max-width: 1055px;
+        margin: -42px auto 0;
+        align-content: center;
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    &__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        @media (min-width: 376px) {
+            justify-content: center;
+        }
+    }
+
+    &__title {
+        font-family: "Shrikhand";
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0;
+        @media (min-width: 376px) {
+            padding-right: 20px;
+        }
+    }
+}
