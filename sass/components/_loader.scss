@@ -12,7 +12,7 @@
     bottom: 0;
     z-index: 1;
     height: 100vh;
-    animation: animationloader 3s forwards;
+    animation: animationloader 1.5s forwards;
 }
 
 .loader__element {
@@ -37,7 +37,7 @@
 
     &:before {
         z-index: 100;
-        animation: loader-effect 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+        animation: loader-effect 1.2s infinite;
     }
 
     &:after {
