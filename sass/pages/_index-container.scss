@@ -2,12 +2,8 @@
 
 .restaurants {
     @include flex-column;
-    padding-left: 14px;
-    padding-right: 15px;
     background-color: $color-seasalt;
-    @media (min-width: 376px) {
-        padding: 0px 180px;
-    }
+
     &__title {
         font-size: 24px;
         font-weight: 700;
