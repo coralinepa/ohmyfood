@@ -15,8 +15,7 @@
     }
 
     &__list {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         gap: 25px;
         padding: 0 20px;
 
@@ -49,8 +48,7 @@
                 color: $color-main;
                 width: 24px;
                 height: 24px;
-                display: flex;
-                justify-content: center;
+                @include flex-center;
                 align-items: center;
                 margin-left: -12px;
             }

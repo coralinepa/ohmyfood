@@ -11,8 +11,7 @@
     &--transparent {
         position: absolute;
         opacity: 1;
-        width: 23px;
-        height: 21px;
+        @include size-heart;
         &:hover {
             opacity: 0;
         }
@@ -21,8 +20,7 @@
     &--gradient {
         position: absolute;
         opacity: 0;
-        width: 23px;
-        height: 21px;
+        @include size-heart;
         transition: all 400ms;
         &:hover {
             transform: scale(1);

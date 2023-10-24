@@ -139,7 +139,7 @@
      -moz-appearance: none;
           appearance: none;
   text-decoration: none;
-  color: black;
+  color: #000;
 }
 
 .card .like {
@@ -216,19 +216,19 @@
 
 .btn__validation {
   display: flex;
+  justify-content: center;
   flex: 0 0 auto;
   background-color: #99e2d0;
   height: 69px;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   border-radius: 0 15px 15px 0;
   opacity: 0;
   width: 0;
 }
 
 .fa-circle-check {
-  color: white;
+  color: #fff;
 }
 
 .loader {
@@ -236,7 +236,7 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  background-color: black;
+  background-color: #000;
   opacity: 1;
   top: 0;
   right: 0;
@@ -254,9 +254,7 @@
   position: relative;
   margin: 0 auto;
 }
-
-#loader__element--round:before,
-#loader__element--round:after {
+.loader__element:before, .loader__element:after {
   content: "";
   position: absolute;
   top: -10px;
@@ -267,13 +265,11 @@
   border: 10px solid transparent;
   border-top-color: #9356dc;
 }
-
-#loader__element--round:before {
+.loader__element:before {
   z-index: 100;
   animation: loader-effect 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
 }
-
-#loader__element--round:after {
+.loader__element:after {
   border: 10px solid #ccc;
 }
 
@@ -309,7 +305,7 @@
   }
 }
 @keyframes cardEnterSecond {
-  25% {
+  0% {
     transform: translateX(-110%);
   }
   50% {
@@ -322,8 +318,12 @@
   }
 }
 @keyframes cardEnterThird {
-  50% {
+  0% {
     transform: translateX(-110%);
+  }
+  75% {
+    transform: translateX(0);
+    opacity: 1;
   }
   100% {
     transform: translateX(0);
@@ -331,7 +331,7 @@
   }
 }
 @keyframes cardEnterFour {
-  75% {
+  0% {
     transform: translateX(-110%);
   }
   100% {
@@ -402,8 +402,8 @@
   }
 }
 .footer__list {
-  display: flex;
   gap: 10px;
+  display: flex;
   flex-direction: column;
   list-style-type: none;
   color: #fff;
@@ -437,8 +437,8 @@
 }
 
 .header {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: center;
   position: relative;
   padding-top: 14px;
@@ -490,7 +490,7 @@
 @media (min-width: 376px) {
   .headline__restaurants--note {
     height: 390px;
-    background-position: center -768px;
+    background-position: center -900px;
   }
 }
 
@@ -510,7 +510,7 @@
 @media (min-width: 376px) {
   .headline__restaurants--meaning {
     height: 390px;
-    background-position: center -250px;
+    background-position: center -500px;
   }
 }
 
@@ -642,6 +642,14 @@ body {
   background-color: #f6f6f6;
 }
 
+h3,
+h4 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: normal;
+}
+
 h1 {
   font-size: 24px;
   font-weight: 700;
@@ -667,12 +675,8 @@ h4 {
 
 h3,
 h4 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-family: "Roboto";
   color: #000;
   font-style: normal;
-  line-height: normal;
 }
 
 h4,
