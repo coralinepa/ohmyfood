@@ -7,7 +7,7 @@
     &__content {
         @include flex-column;
         align-items: flex-start;
-        @media (min-width: 376px) {
+        @media (min-width: 769px) {
             flex-direction: row-reverse;
             align-items: center;
         }
@@ -17,7 +17,7 @@
         width: 139px;
         margin-left: 0;
         padding-left: 0;
-        @media (min-width: 376px) {
+        @media (min-width: 769px) {
             padding-left: 20px;
             margin-left: 30px;
         }
@@ -30,7 +30,7 @@
         color: $color-main;
         padding-bottom: 7px;
         padding-left: 14px;
-        @media (min-width: 376px) {
+        @media (min-width: 769px) {
             flex-direction: row;
         }
 
