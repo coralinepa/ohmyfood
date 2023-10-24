@@ -1,0 +1,27 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin animation-delay {
+    animation-delay: 1s;
+}
+
+@mixin visible-card {
+    transform: (translateX(0));
+    opacity: 1;
+}
+
+@mixin hidden-card {
+    transform: (translateX(-110%));
+}
+
+@mixin size-heart {
+    width: 23px;
+    height: 21px;
+}

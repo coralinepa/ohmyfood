@@ -8,8 +8,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .search {
-    display: flex;
-    justify-content: center;
+    @include flex-center;
     background-color: $color-section;
     padding-top: 15px;
     padding-bottom: 15px;

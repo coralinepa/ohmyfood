@@ -1,16 +1,17 @@
+@use "../utils" as *;
+
 .btn__validation {
-    display: flex;
+    @include flex-center;
     flex: 0 0 auto;
-    background-color: #99e2d0;
+    background-color: $green-light;
     height: 69px;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     border-radius: 0 15px 15px 0;
     opacity: 0;
     width: 0;
 }
 
 .fa-circle-check {
-    color: white;
+    color: $color-main;
 }

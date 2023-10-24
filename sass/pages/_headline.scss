@@ -1,11 +1,10 @@
 @use "../utils" as *;
 
 .headline {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     align-items: center;
     text-align: center;
-    background-color: #f6f6f6;
+    background-color: $color-seasalt;
     padding-top: 39px;
     padding-bottom: 30px;
 }

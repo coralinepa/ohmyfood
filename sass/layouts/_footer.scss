@@ -5,8 +5,7 @@
     padding: 22px 25px;
 
     &__content {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         align-items: flex-start;
         @media (min-width: 376px) {
             flex-direction: row-reverse;
@@ -25,9 +24,8 @@
     }
 
     &__list {
-        display: flex;
         gap: 10px;
-        flex-direction: column;
+        @include flex-column;
         list-style-type: none;
         color: $color-main;
         padding-bottom: 7px;

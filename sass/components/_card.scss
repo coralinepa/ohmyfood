@@ -46,7 +46,7 @@
         position: absolute;
         right: 27px;
         top: 19px;
-        background-color: #99e2d0;
+        background-color: $green-light;
         padding: 9px 7px 8.63px 6px;
         color: #008766;
         font-size: 14px;
@@ -96,7 +96,7 @@
     cursor: pointer;
     appearance: none;
     text-decoration: none;
-    color: black;
+    color: $color-text;
 }
 
 .card .like {
