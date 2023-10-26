@@ -2,7 +2,7 @@
 
 .footer {
     background-color: #353535;
-    padding: 22px 25px;
+    padding: 25px 10px;
 
     &__content {
         @include flex-column;
@@ -29,7 +29,7 @@
         list-style-type: none;
         color: $color-main;
         padding-bottom: 7px;
-        padding-left: 14px;
+        padding-left: 0px;
         @media (min-width: 769px) {
             flex-direction: row;
         }
