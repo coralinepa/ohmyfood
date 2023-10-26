@@ -23,7 +23,6 @@
         @include size-heart;
         transition: all 400ms;
         &:hover {
-            transform: scale(1);
             opacity: 1;
         }
     }

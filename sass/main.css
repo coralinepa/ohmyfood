@@ -47,7 +47,6 @@
   transition: all 400ms;
 }
 .like--gradient:hover {
-  transform: scale(1);
   opacity: 1;
 }
 
@@ -373,7 +372,7 @@
 
 .footer {
   background-color: #353535;
-  padding: 22px 25px;
+  padding: 25px 10px;
 }
 .footer__content {
   display: flex;
@@ -404,7 +403,7 @@
   list-style-type: none;
   color: #fff;
   padding-bottom: 7px;
-  padding-left: 14px;
+  padding-left: 0px;
 }
 @media (min-width: 769px) {
   .footer__list {
@@ -439,6 +438,7 @@
   position: relative;
   padding-top: 14px;
   padding-bottom: 13px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 @media (min-width: 376px) {
   .header {
